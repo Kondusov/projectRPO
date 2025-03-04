@@ -1,0 +1,29 @@
+{
+	"name": "projectrpo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "ts-node ./src/index.ts",
+		"dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+		"dev:build": "tsc --watch",
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Kondusov/projectRPO.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/Kondusov/projectRPO/issues"
+	},
+	"homepage": "https://github.com/Kondusov/projectRPO#readme",
+	"devDependencies": {
+		"node-ts": "^8.0.0",
+		"ts-node-dev": "^2.0.0",
+		"typescript": "^5.8.2"
+	}
+}
