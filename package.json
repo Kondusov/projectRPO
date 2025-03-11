@@ -4,10 +4,8 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "ts-node ./src/index.ts",
-		"dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-		"dev:build": "tsc --watch",
-		"build": "tsc"
+		"start": "node src/express_api_scraper.js",
+		"test": "jest"
 	},
 	"repository": {
 		"type": "git",
@@ -21,9 +19,15 @@
 		"url": "https://github.com/Kondusov/projectRPO/issues"
 	},
 	"homepage": "https://github.com/Kondusov/projectRPO#readme",
+	"dependencies": {
+		"axios": "^1.8.2",
+		"express": "^4.21.2",
+		"sqlite3": "^5.1.7"
+	},
 	"devDependencies": {
-		"node-ts": "^8.0.0",
-		"ts-node-dev": "^2.0.0",
-		"typescript": "^5.8.2"
+		"axios-mock-adapter": "^2.1.0",
+		"jest": "^29.7.0",
+		"lorem-ipsum": "^2.0.8",
+		"supertest": "^7.0.0"
 	}
 }
